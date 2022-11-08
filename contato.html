@@ -2,7 +2,7 @@
 <html lang="pt-br">
     <head>
         <meta charset="UTF-8">
-        <title>De armário</title>
+        <title>Contato</title>
         <link rel="stylesheet" href="reset.css">
         <link rel="stylesheet" href="style.css">
     </head>
@@ -49,13 +49,38 @@
                     </nav>
                 </div>
                 <div class="contato">
-                    <a href="contato.html"><p>MANDA UMA MENSAGEM<br> PRA GENTE!!!</p></a>
+                    <a href="contato.html"><p style="color: #8B4726">MANDA UMA MENSAGEM<br> PRA GENTE!!!</p></a>
                 </div>
                 <div class="imagemFundo">
                     <img id="teste" src="imagens/a.png">
                     <div class="publicacoes">
-                        <br>Ingredientes básicos de armário<br>
-                        
+                        <br><form>
+                            <label for="nomesobrenome">Nome e sobrenome</label>
+                            <input type="text" id="nomesobrenome" class="input-padrao" required>
+            
+                            <label for="email">Email</label>
+                            <input type="email" id="email" class="input-padrao" required placeholder="seuemail@dominio.com.br">
+            
+                            <label for="telefone">Telefone</label>
+                            <input type="tel" id="telefone" class="input-padrao" required placeholder="(xx) xxxxx-xxxx">
+            
+                            <label for="mensagem">Mensagem</label>
+                            <textarea cols="70" rows="10" id="mensagem" class="input-padrao" required></textarea>
+            
+                            <fieldset>
+                                <legend>Como prefere o nosso contato?</legend>
+            
+                                <label for="radio-email"><input type="radio" value="email" id="radio-email" class="contat"> Email</label>
+                                
+                                <label for="radio-telefone"><input type="radio" value="telefone" id="radio-telefone" class="contat"> Telefone</label>
+                                
+                                <label for="radio-whatsapp"><input type="radio" value="whatsapp" id="radio-whatsapp" class="contat"> Whatsapp</label>
+                            </fieldset>
+            
+                            <label class="checkbox"><input type="checkbox">Gostaria de receber nossas novidades por email?</label>
+            
+                            <input type="submit" value="Enviar formulario">
+                        </form>
                     </div>
                 </div>
     </body>

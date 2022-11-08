@@ -5,6 +5,7 @@ body
 
 header
     {
+        
         padding: 20px 0;
         background: url(imagens/fundo.png);
     }
@@ -63,40 +64,111 @@ p
     }
 
 li
-{
-    background: #8c443b;
-    color: #eeb174;
-    list-style-image: url(imagens/biscoito.png);
-    display: inline-block;
-	text-align: center;
-	width: 100%;
-	vertical-align: top;
-	margin: 0 1.5%;
-	padding: 10px 7px;
-	box-sizing: border-box;
-	border: 2px solid #000000;
-	border-radius: 15px;
-}
+    {
+        background: #8c443b;
+        color: #eeb174;
+        list-style-image: url(imagens/biscoito.png);
+        display: inline-block;
+        text-align: center;
+        width: 100%;
+        vertical-align: top;
+        margin: 0 1.5%;
+        padding: 10px 7px;
+        box-sizing: border-box;
+        border: 2px solid #000000;
+        border-radius: 15px;
+        transition: 1s all;
+        cursor: pointer;
+    }
 
-a:hover{
-    text-decoration: underline;
-}
+a:hover
+    {
+        color: #2c2218;
+        transform: scale(1.2);
+    }
 
-a:active{
-    color: black;
-    font-weight: bold;    
-}
+a:active
+    {
+        color: black;
+        font-weight: bold;    
+    }
 
-.imagemFundo{
-    text-align: right;
-}
-#teste{
-    right: 0;
-    width: 70%;
-}
-.publicacoes{
-    position: absolute;
-   height: 400px;
-    width: 400px;
+.imagemFundo
+    {
+        text-align: right;
+    }
+    
+#teste
+    {
+        right: 0;
+        width: 70%;
+    }
 
+.publicacoes
+    {
+        position: absolute;
+        top: 450px;
+        left: 250px;
+        height: 400px;
+        width: 400px;
+
+    }
+
+.contato
+    {
+        color: #8c443b;
+        text-decoration: none;
+        font-weight: bold;
+        position: absolute;
+        margin: 540px 0 0 20px;
+        padding: 10px 7px;
+        box-sizing: border-box;
+	    border: 5px double #000000;
+	    border-radius: 15px;
+        font-size: 20px;
+        transition: 1s all;
+        cursor: pointer;
+    }
+
+    form {
+        position: absolute;
+        height: 400px;
+        width: 700px;
+        margin: 0 0 0 400px;
+    }
+    
+    form label, form legend {
+        display: block;
+        text-align: left;
+        font-size: 20px;
+        margin: 0 0 10px;
+    }
+    
+    .input-padrao {
+        display: block;
+        margin: 0 0 20px;
+        padding: 10px 20px;
+        width: 50%
+    }
+    
+    .checkbox {
+        margin: 20px 0;
+    }
+
+    a.contato {
+        text-decoration: none;
+    }
+
+    body header > a {
+        text-decoration: none;
+    }
+
+.video{
+  
+position: absolute;
+        
+        left: 250px;
+        
+        width: 600px;
+ 
 }
