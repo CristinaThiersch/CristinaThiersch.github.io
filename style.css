@@ -98,18 +98,20 @@ body
 
 li
 {
-    margin: 0 1.5%;
-    padding: 5px 10px;
+    margin: 0px 1.5%;
+    padding: 4px 1px;
     text-align: center;
-    border: 3px solid black;
-    border-radius: 10px;
+    border: 2px solid black;
+    border-radius: 8px;
     list-style-type: none;
 }
 
 ul
 {
-    margin-top: 0px;
-    margin-bottom: 0px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    padding-top: 0px;
+    padding-bottom: 0px;
     font-size: 22px;
     font-weight: bold;
 }
@@ -118,9 +120,8 @@ ul
 nav ul li ul
 {
     position: absolute;
-    top: 30px;
-    left: 230px;
-    padding: 0px 0px;
+    top: 10px;
+    left: 240px;
     background-color: #eeb174;
     display: none;
 }
@@ -129,7 +130,7 @@ nav ul li:hover ul{display: block;}
 
 nav ul li ul li{
     display: block;
-    width: 200px;
+    width: 150px;
 }
 
 /* Fim MENU DROPDOWN */
@@ -156,4 +157,78 @@ form label, form legend
     display: block;
     font-size: 20px;
     margin: 0 0 10px;
+}
+
+
+/*Formatação para celular*/
+@media screen and (max-width: 480px)
+{
+    h1
+    {
+        text-shadow: 2px 2px 1px #000000;
+        transition: 400ms;
+        text-align: right;
+        color: #8c443b;
+        font-size: 25px;
+        font-style: italic;
+        font-family: cursive;
+    }
+
+    h1:first-letter
+    {
+        color: #1e1102;
+        font-size: 30px;
+    }
+
+    h2
+    {
+        text-align: right;
+        color: #8c443b;
+        font-size: 15px;
+        font-style: italic;
+    }
+
+    #logo
+    {
+        width: 5%;
+        opacity: 0.8;
+        transition: 400ms; 
+    }
+
+    p
+    {
+        font-size: 11px;
+    }
+
+    ul
+    {
+        font-size: 10px;
+        margin: 0px 0px;
+        padding: 0px 0px;
+    }
+
+    nav ul li ul
+    {
+        position: absolute;
+        top: 10px;
+        left: 120px;
+        background-color: #eeb174;
+        display: none;
+    }
+
+    .contato
+    {
+        font-size: 12px;
+    }
+
+    form label, form legend
+    {
+        display: block;
+        font-size: 10px;
+        margin: 0 0 5px;
+    }
+
+    main, .publicacoes, .contato, .video{
+        width: auto;
+    }
 }
